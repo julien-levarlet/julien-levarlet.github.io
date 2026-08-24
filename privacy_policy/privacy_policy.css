@@ -1,0 +1,68 @@
+main {
+    margin: 0 auto;
+    padding: 1.5em 1em;
+    max-width: 800px;
+    align-items: start;
+    text-align: start;
+    justify-content: start;
+}
+
+h1 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 8px;
+    font-size: 1.8em;
+}
+
+.privacy-card {
+    background-color: var(--card-bg);
+    border-left: 4px solid var(--primary-color);
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.privacy-card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: var(--primary-color);
+}
+
+.privacy-card ul {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.privacy-card li {
+    margin-bottom: 6px;
+}
+
+strong {
+    display: block;
+    margin-top: 1.5em;
+    font-size: 1.15em;
+    color: var(--primary-color);
+}
+
+ul {
+    margin-top: 8px;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p:not(:last-child) {
+    margin-bottom: 1em;
+}
