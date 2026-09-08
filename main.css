@@ -121,6 +121,25 @@ p.subtitle {
     font-size: 0.9rem;
 }
 
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.contact-link {
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+.contact-link-placeholder {
+    color: #777;
+    font-weight: normal;
+}
+
 .badge-container {
     display: flex;
     flex-direction: row;
