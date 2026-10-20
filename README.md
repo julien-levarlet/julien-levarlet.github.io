@@ -1,6 +1,6 @@
 # ChirpQuiz website
 
-The complete GitHub Pages site is built with MkDocs Material. Edit the source in `mkdocs/`; the generated site is written to `docs/`.
+The complete GitHub Pages site is built with MkDocs Material. Edit the source in `mkdocs/`, the generated site is written to `docs/`.
 
 ## Project layout
 
@@ -23,7 +23,7 @@ These old URLs are kept as redirects for existing links and bookmarks. Destinati
 | `/privacy_policy/en.html` | `/privacy_policy/` |
 | `/privacy_policy/fr.html` | `/fr/privacy_policy/` |
 
-The Google Play listing uses `/privacy_policy/en.html`; keep that redirect in place unless the listing URL is updated too. The redirect source files are under `mkdocs/`.
+The Google Play listing uses `/privacy_policy/en.html`, keep that redirect in place unless the listing URL is updated too. The redirect source files are under `mkdocs/`.
 
 ## Set up MkDocs
 
@@ -55,6 +55,6 @@ python -m mkdocs build
 python -m http.server 8001 --directory docs
 ```
 
-Open `http://127.0.0.1:8001/`. Use this mode to check page navigation, the language selector, and the light/dark theme against the generated output. The site is static; do not open its HTML files directly with a `file://` URL. If port `8001` is already in use, choose another port number.
+Open `http://127.0.0.1:8001/`. Use this mode to check page navigation, the language selector, and the light/dark theme against the generated output. The site is static, do not open its HTML files directly with a `file://` URL. If port `8001` is already in use, choose another port number.
 
 After changing content, rebuild the site and commit the generated `docs/` output along with the source changes when publishing from the repository's `docs/` folder.

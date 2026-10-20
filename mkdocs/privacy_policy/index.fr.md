@@ -35,7 +35,7 @@ Aucun compte utilisateur, profil ou donnée de jeu n'est transmis. Pour en savoi
 
 ## Liens externes
 
-L'Application peut contenir des liens vers des sites web externes, par exemple Wikipédia, Xeno-canto, GBIF et la Liste rouge de l'UICN. Si vous cliquez sur un lien tiers, vous serez redirigé vers ce site. Ces sites ne sont pas exploités par le Fournisseur de services ; nous vous invitons à consulter leur politique de confidentialité.
+L'Application peut contenir des liens vers des sites web externes, par exemple Wikipédia, Xeno-canto, GBIF et la Liste rouge de l'UICN. Si vous cliquez sur un lien tiers, vous serez redirigé vers ce site. Ces sites ne sont pas exploités par le Fournisseur de services, nous vous invitons à consulter leur politique de confidentialité.
 
 ## Conservation et suppression des données
 

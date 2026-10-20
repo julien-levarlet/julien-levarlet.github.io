@@ -30,6 +30,8 @@ The app language controls menus and messages. The bird language controls bird na
 
 ## Search and bird details
 
-Use **Search** to look up birds by common or scientific name. **In Area** follows your current area and season, **All Birds** searches the full bird database, and **My Lists** lets you create quiz lists. A bird's detail page can show a Wikipedia summary and image, Xeno-canto recordings, and links to other reference resources when available and online.
+Use **Search** to look up birds by common or scientific name. **In Area** follows your current area and season, **All Birds** searches the full bird database, and **My Lists** lets you create quiz lists and check each bird's learning status. A bird's detail page can show a Wikipedia summary and image, Xeno-canto recordings, and links to other reference resources when available and online.
+
+Bird distribution information and the OpenStreetMap map are included in the app and are available offline. Recordings, Wikipedia summaries, and some other reference information are loaded online.
 
 The app's information and credits area links to the source projects and provides developer contact and review options.

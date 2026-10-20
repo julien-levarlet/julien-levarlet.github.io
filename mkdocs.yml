@@ -25,7 +25,7 @@ plugins:
                 - Difficulty: difficulty.md
                 - Learning and scoring: learning-and-scoring.md
                 - Settings: settings.md
-                - Xeno-canto and Wikipedia: projects-and-support.md
+                - Bird data and sources: projects-and-support.md
                 - FAQ: faq.md
         - locale: fr
           name: Français
@@ -42,7 +42,7 @@ plugins:
                 - Difficulty: difficulty.md
                 - Learning and scoring: learning-and-scoring.md
                 - Settings: settings.md
-                - Xeno-canto and Wikipedia: projects-and-support.md
+                - Bird data and sources: projects-and-support.md
                 - FAQ: faq.md
 theme:
   name: material

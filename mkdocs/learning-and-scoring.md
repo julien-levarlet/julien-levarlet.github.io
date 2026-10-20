@@ -4,7 +4,7 @@ description: Understand how ChirpQuiz tracks bird learning progress, schedules T
 
 # Learning and Scoring
 
-ChirpQuiz tracks two kinds of learning progress. A species has a general learning status that appears in **Learning Mode**. Training also keeps a review queue for each quiz and level. The first status describes how consistently you have identified the bird; the queue controls when it returns during that particular Training quiz.
+ChirpQuiz tracks your learning progress. You can see each species' general learning status in the **My Lists** tab. The status describes how consistently you have identified the bird.
 
 ## How a bird's learning status changes
 
@@ -16,24 +16,13 @@ Each bird has a learning score from **0 to 3**. A bird with no saved history sta
 | 1 or 2 | **Learning** | Some progress has been recorded, but the bird is not yet consistently identified. |
 | 3 | **Mastered** | The bird has reached the top of the learning scale. |
 
-When a question is completed, a correct answer on the **first attempt** raises the bird's score by one, up to 3. If you make one or more mistakes before eventually answering correctly in Training, that completed question lowers the score by one instead. In Challenge, a wrong answer ends the question and lowers the score by one. Scores cannot go below 0 or above 3.
+When a question is completed, a correct answer on the **first attempt** raises the bird's score by one, up to 3. If you make one or more mistakes before eventually answering correctly in Training, that completed question lowers the score by one instead. In Challenge, a wrong answer ends the question and lowers the score by one.
 
-This is a small progression scale, not a percentage or a measured certainty. The app also records correct and incorrect outcomes, but the three statuses above are based on the 0-to-3 score. You can find groups of birds in Search or choose a status as a level in Learning Mode when there are enough birds in it.
+This is a small progression scale, not a percentage or a measured certainty. The app also records correct and incorrect outcomes, but the three statuses above are based on the 0-to-3 score. You can find birds by learning status in **My Lists**, or choose a status as a level in Learning Mode when there are enough birds in it.
 
 ## How Training decides what to ask next
 
-Training maintains a separate queue for each quiz and level. It groups the eligible birds into review stages, initially informed by each bird's learning score. The stages are:
-
-1. New or not yet learned
-2. Early practice
-3. Later practice
-4. Mastered review
-
-The queue tries to keep up to eight birds active. When a bird is answered correctly on the first try, it advances one stage. When a question includes a mistake, it moves back one stage. Birds at the final mastered stage leave the active queue and can return later as review. If the quiz needs more active birds, it introduces unseen birds first, then birds in progress, and uses mastered birds as a fallback.
-
-When choosing among active birds, the queue favors new and early-practice birds. Later-practice birds appear less often, and mastered birds have the lowest selection weight. If a quiz has only a few eligible birds, the queue can include all of them and repeats will be more frequent.
-
-Training progress is remembered separately for each quiz and level. The general learning status is shared with Learning Mode, but the exact review stage is specific to that Training quiz. Challenge uses a random order rather than this Training queue, while still updating the general learning status when a question is resolved.
+The app uses a Leitner spaced-repetition system in Training: birds you are still learning come back sooner, while birds you identify consistently are shown less often. The review queue is separate for each quiz and level. For more about the method, see [the Leitner system on Wikipedia](https://en.wikipedia.org/wiki/Leitner_system). Challenge uses a random order, while still updating your general learning status when a question is resolved.
 
 ## How Challenge points work
 
@@ -60,7 +49,7 @@ The score displayed during Challenge is the current run's total. The trophy valu
 
 These are separate settings:
 
-- **Expert difficulty** makes distractors more closely related to the target bird. In the General Quiz it also selects a less common observation-frequency range and considers more recordings.
-- **Expert mode** fixes Challenge points at one per correct answer. It does not change the selected target, distractors, or number of lives.
+- **Expert difficulty** makes distractors more closely related to the target bird in multiple-choice quizzes. In the General Quiz it also selects a less common observation-frequency range and considers more recordings.
+- **Expert mode** replaces the four answer buttons with a searchable list of all birds in the current quiz. In Challenge, each correct answer is worth one point, the mode does not change the quiz pool or number of lives.
 
 See [Difficulty](difficulty.md) for the difficulty presets and custom controls, and [Quiz Modes](quiz-modes.md) for how Training and Challenge differ.

@@ -2,13 +2,21 @@
 description: Discover ChirpQuiz, a free bird song quiz app for learning to identify more than 8,000 bird species by sound.
 ---
 
-# Welcome to ChirpQuiz
+# ChirpQuiz
 
-Identify nature's melodies. Learn to recognize more than 8,000 birds with our free, ad-free application.
+ChirpQuiz is a free, ad-free app for learning to identify more than 8,000 bird species by their calls. I developed it to combine listening quizzes with tools for targeted practice.
 
-## Discover the app
+## Quiz and learning features
 
-Explore the features and download ChirpQuiz:
+- **Five quiz types:** explore birds by area, observation frequency, scientific classification, personal lists, or learning status.
+- **Two ways to play:** use Training to practice at your own pace, or Challenge to test your knowledge with three lives and a score.
+- **Expert mode and adjustable difficulty:** select an answer from all birds in the current quiz, or use four choices with configurable answer similarity and other difficulty settings.
+- **Learning progress:** Training is optimized for learning. Each bird's learning status is available in the *My Lists* tab.
+- **Bird information and maps:** consult species information and distribution data on a map. Distribution data and the OpenStreetMap map are included in the app and available offline.
+
+See the [user guide](user_manual/index.md) for details about [quiz types](bird-selection.md), [quiz modes](quiz-modes.md), [difficulty](difficulty.md), and [learning progress](learning-and-scoring.md).
+
+## Download
 
 <p>
 	<a href="https://apps.apple.com/app/apple-store/id6755439517?pt=128298084&amp;ct=landing_page&amp;mt=8">
@@ -21,11 +29,11 @@ Explore the features and download ChirpQuiz:
 
 ## Explore
 
-- [User guide](user_manual/index.md): tutorials and tips to make the most of ChirpQuiz.
-- [Privacy policy](privacy_policy/index.md): learn how the app handles data.
+- [User guide](user_manual/index.md): instructions and feature details.
+- [Privacy policy](privacy_policy/index.md): information about data handling.
 
 ## Contact
 
-Questions or suggestions? [Email the developer](mailto:birdquiz.contact@gmail.com) or [join the Discord](https://discord.gg/hnEvSKmJ68).
+I'm Julien Levarlet, the developer of ChirpQuiz. For questions or suggestions, [email me](mailto:birdquiz.contact@gmail.com) or visit the [Discord community](https://discord.gg/hnEvSKmJ68).
 
-Developed by Julien Levarlet. Bird data and recordings from GBIF, Xeno-canto, and Wikipedia.
+The app uses bird data from GBIF, recordings from Xeno-canto, and information and images from Wikipedia and Wikimedia.

@@ -32,8 +32,8 @@ Choose how many Xeno-canto recordings may be considered for a species, from 1 to
 
 ### Observation frequency
 
-Set the lower and upper bounds of the relative observation range. Lower percentages focus on more frequently observed species; higher percentages include less frequently observed species. A wider range makes more species eligible. This setting affects only the General Quiz.
+Set the lower and upper bounds of the relative observation range. Lower percentages focus on more frequently observed species, higher percentages include less frequently observed species. A wider range makes more species eligible. This setting affects only the General Quiz.
 
 ## Expert mode
 
-Expert mode is a separate switch. In Challenge, it makes each correct question worth one point rather than calculating a larger score from the similarity of the choices. It does not replace the difficulty controls.
+Expert mode is a separate switch that changes how you answer: instead of four choices, you search and select the bird from all species eligible for the current quiz. It does not change the quiz's bird pool or replace the difficulty controls. In Challenge, each correct answer is worth one point.

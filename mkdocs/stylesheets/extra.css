@@ -41,6 +41,12 @@
   padding-bottom: 0.35em;
 }
 
+@media (min-width: 60em) {
+  .md-typeset p {
+    text-align: justify;
+  }
+}
+
 .md-typeset a:hover {
   color: #a95d13;
 }
