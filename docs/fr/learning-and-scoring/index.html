@@ -670,7 +670,7 @@
   <span class="md-ellipsis">
     
   
-    Xeno-canto and Wikipedia
+    Bird data and sources
   
 
     
@@ -807,7 +807,7 @@
 
 
 <h1 id="learning-and-scoring">Learning and Scoring</h1>
-<p>ChirpQuiz tracks two kinds of learning progress. A species has a general learning status that appears in <strong>Learning Mode</strong>. Training also keeps a review queue for each quiz and level. The first status describes how consistently you have identified the bird; the queue controls when it returns during that particular Training quiz.</p>
+<p>ChirpQuiz tracks your learning progress. You can see each species' general learning status in the <strong>My Lists</strong> tab. The status describes how consistently you have identified the bird.</p>
 <h2 id="how-a-birds-learning-status-changes">How a bird's learning status changes</h2>
 <p>Each bird has a learning score from <strong>0 to 3</strong>. A bird with no saved history starts at 0.</p>
 <table>
@@ -836,19 +836,10 @@
 </tr>
 </tbody>
 </table>
-<p>When a question is completed, a correct answer on the <strong>first attempt</strong> raises the bird's score by one, up to 3. If you make one or more mistakes before eventually answering correctly in Training, that completed question lowers the score by one instead. In Challenge, a wrong answer ends the question and lowers the score by one. Scores cannot go below 0 or above 3.</p>
-<p>This is a small progression scale, not a percentage or a measured certainty. The app also records correct and incorrect outcomes, but the three statuses above are based on the 0-to-3 score. You can find groups of birds in Search or choose a status as a level in Learning Mode when there are enough birds in it.</p>
+<p>When a question is completed, a correct answer on the <strong>first attempt</strong> raises the bird's score by one, up to 3. If you make one or more mistakes before eventually answering correctly in Training, that completed question lowers the score by one instead. In Challenge, a wrong answer ends the question and lowers the score by one.</p>
+<p>This is a small progression scale, not a percentage or a measured certainty. The app also records correct and incorrect outcomes, but the three statuses above are based on the 0-to-3 score. You can find birds by learning status in <strong>My Lists</strong>, or choose a status as a level in Learning Mode when there are enough birds in it.</p>
 <h2 id="how-training-decides-what-to-ask-next">How Training decides what to ask next</h2>
-<p>Training maintains a separate queue for each quiz and level. It groups the eligible birds into review stages, initially informed by each bird's learning score. The stages are:</p>
-<ol>
-<li>New or not yet learned</li>
-<li>Early practice</li>
-<li>Later practice</li>
-<li>Mastered review</li>
-</ol>
-<p>The queue tries to keep up to eight birds active. When a bird is answered correctly on the first try, it advances one stage. When a question includes a mistake, it moves back one stage. Birds at the final mastered stage leave the active queue and can return later as review. If the quiz needs more active birds, it introduces unseen birds first, then birds in progress, and uses mastered birds as a fallback.</p>
-<p>When choosing among active birds, the queue favors new and early-practice birds. Later-practice birds appear less often, and mastered birds have the lowest selection weight. If a quiz has only a few eligible birds, the queue can include all of them and repeats will be more frequent.</p>
-<p>Training progress is remembered separately for each quiz and level. The general learning status is shared with Learning Mode, but the exact review stage is specific to that Training quiz. Challenge uses a random order rather than this Training queue, while still updating the general learning status when a question is resolved.</p>
+<p>The app uses a Leitner spaced-repetition system in Training: birds you are still learning come back sooner, while birds you identify consistently are shown less often. The review queue is separate for each quiz and level. For more about the method, see <a href="https://en.wikipedia.org/wiki/Leitner_system">the Leitner system on Wikipedia</a>. Challenge uses a random order, while still updating your general learning status when a question is resolved.</p>
 <h2 id="how-challenge-points-work">How Challenge points work</h2>
 <p>Training does not award Challenge points. In Challenge, a correct answer adds points and a wrong answer costs one of the three lives. The number of points per correct answer depends on the challenge type:</p>
 <ul>
@@ -888,8 +879,8 @@
 <h2 id="expert-mode-is-not-the-same-as-expert-difficulty">Expert mode is not the same as Expert difficulty</h2>
 <p>These are separate settings:</p>
 <ul>
-<li><strong>Expert difficulty</strong> makes distractors more closely related to the target bird. In the General Quiz it also selects a less common observation-frequency range and considers more recordings.</li>
-<li><strong>Expert mode</strong> fixes Challenge points at one per correct answer. It does not change the selected target, distractors, or number of lives.</li>
+<li><strong>Expert difficulty</strong> makes distractors more closely related to the target bird in multiple-choice quizzes. In the General Quiz it also selects a less common observation-frequency range and considers more recordings.</li>
+<li><strong>Expert mode</strong> replaces the four answer buttons with a searchable list of all birds in the current quiz. In Challenge, each correct answer is worth one point, the mode does not change the quiz pool or number of lives.</li>
 </ul>
 <p>See <a href="../difficulty/">Difficulty</a> for the difficulty presets and custom controls, and <a href="../quiz-modes/">Quiz Modes</a> for how Training and Challenge differ.</p>
 
