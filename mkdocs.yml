@@ -1,0 +1,73 @@
+site_name: ChirpQuiz
+site_url: https://julien-levarlet.github.io/
+site_description: Learn to identify more than 8,000 bird species by their sounds with ChirpQuiz, a free, ad-free bird song quiz app.
+docs_dir: mkdocs
+site_dir: docs
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      languages:
+        - locale: en
+          name: English
+          default: true
+          link: /
+          nav:
+            - Home: index.md
+            - Privacy policy: privacy_policy/index.md
+            - User manual:
+                - Overview: user_manual/index.md
+                - Getting started: getting-started.md
+                - Quiz modes: quiz-modes.md
+                - How birds are selected: bird-selection.md
+                - Difficulty: difficulty.md
+                - Learning and scoring: learning-and-scoring.md
+                - Settings: settings.md
+                - Bird data and sources: projects-and-support.md
+                - FAQ: faq.md
+        - locale: fr
+          name: Français
+          link: /fr/
+          site_name: CuiQuiz
+          nav:
+            - Accueil: index.md
+            - Politique de confidentialité: privacy_policy/index.md
+            - Guide d'utilisation (en anglais):
+                - Présentation: user_manual/index.md
+                - Getting started: getting-started.md
+                - Quiz modes: quiz-modes.md
+                - How birds are selected: bird-selection.md
+                - Difficulty: difficulty.md
+                - Learning and scoring: learning-and-scoring.md
+                - Settings: settings.md
+                - Bird data and sources: projects-and-support.md
+                - FAQ: faq.md
+theme:
+  name: material
+  custom_dir: mkdocs/overrides
+  logo: assets/logo/logo_small.png
+  favicon: assets/logo/logo_small.png
+  palette:
+    - scheme: default
+      primary: blue
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+extra_css:
+  - stylesheets/extra.css
